@@ -1,0 +1,11 @@
+header {
+  background-color: #145767;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}

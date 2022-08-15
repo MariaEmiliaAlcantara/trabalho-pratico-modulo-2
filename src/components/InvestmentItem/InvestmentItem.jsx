@@ -1,18 +1,23 @@
+import "./InvestmentItem.css";
+
 const InvestmentItem = ({ data }) => {
   return (
-    <>
-      <h1 className="text-center m-2">{data.description} </h1>
+    <div id="wrapper">
+      <h1 id="title" className="text-center">
+        {data.description}{" "}
+      </h1>
       <h3
-        className={`text-center m-2 ${
+        id="rentabilidade"
+        className={`text-center ${
           data.rentabilidadeAnual >= 0 ? "text-green-800" : "text-red-800"
         }
         `}
       >
         (Rentabilidade Anual: {data.rentabilidadeAnual}%)
       </h3>
-      <table className="container mx-auto p-10 mb-5 text-sm text-base">
+      <table id="table" className="container mx-auto">
         <thead>
-          <tr>
+          <tr id="rowTitle">
             <th>Mês</th>
             <th>Saldo</th>
             <th>Rentabilidade</th>
@@ -36,7 +41,7 @@ const InvestmentItem = ({ data }) => {
           </tbody>
         ))}
       </table>
-    </>
+    </div>
   );
 };
 

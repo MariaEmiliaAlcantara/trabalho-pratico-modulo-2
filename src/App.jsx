@@ -1,8 +1,8 @@
-import Investment from "./components/Investment";
-import InvestmentItem from "./components/InvestmentItem";
-import Header from "./components/Header";
+import InvestmentItem from "./components/InvestmentItem/InvestmentItem";
+import Header from "./components/Header/Header";
 import api from "./services/api";
 import { useEffect, useState } from "react";
+import "./App.css";
 
 export default function App() {
   const [reports, setReports] = useState([]);
@@ -80,12 +80,12 @@ export default function App() {
   return (
     <div>
       <Header />
-      <Investment>
+      <div className="wrapperMain">
         {investmentArray &&
           investmentArray.map((item) => (
             <InvestmentItem key={item.id} data={item} />
           ))}
-      </Investment>
+      </div>
     </div>
   );
 }

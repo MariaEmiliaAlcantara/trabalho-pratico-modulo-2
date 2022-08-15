@@ -1,0 +1,32 @@
+#wrapper {
+  background-color:#f6f6f6f1;
+  margin: 10px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  color: #426175;
+  font-family: 'Roboto Slab', serif;
+  max-width: 80vw;
+  min-width: 40vw;
+}
+
+#rowTitle {
+  color: #032639;
+}
+
+#title {
+  font-size: 20px;
+  color: #0D3743;
+  font-family: 'Roboto Slab', serif;
+}
+
+#rentabilidade {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#table {
+  margin: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+}
